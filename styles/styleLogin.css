@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    color:white;
+    margin: 0;
+    font-family: helvetica;
+    background-image: url("https://images.gta5-mods.com/screens/observatory.jpg");
+    background-position-x: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+@font-face {
+    font-family: "SignPainter";
+    src: url("SignPainter.ttf") format("truetype");
+ } 
+ h1 {
+     padding: 30 0 0 0;
+     font-family: SignPainter;
+     font-size: 300%;
+     font-weight: 100;
+     margin: 10;
+ }
+form {
+    line-height: 35px;
+    color:black;
+    text-align: left;
+    padding: 15 15;
+    background-color: RGB(215,219,224);
+    width: 260px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    font-weight: 600;
+}
+input {
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 10 10;
+    font-size: 120%;
+    width: 260px;
+}
+#wrongPassword{
+    width: 100%;
+    height: 40;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 0;
+    color:#a94442;
+    background-color: #f2dede;
+}
+#submit {
+    margin: -10 0 10 0;
+    background-color: #20ba4e;
+    color:white;
+}
+#submit:hover {
+    background-color: #198e3c;
+}

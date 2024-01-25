@@ -1,0 +1,11 @@
+strona z uploadem       git
+komentarze              git
+ocena gwiazdkowa
+zdjęcie w headerze      git
+upload plików/zdjęć
+rozwijający się przycisk po nacisinięciu nicku w headerze   git
+stopka
+"kategoria" forum i more
+fontawesome wbudowany
+profil uzytkownika
+różne obrazki do różnych kategorii  !important

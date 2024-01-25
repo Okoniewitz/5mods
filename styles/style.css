@@ -1,0 +1,296 @@
+body {
+    margin: 0 0 40 0;
+    font-family: "helvetica neue",Helvetica,Arial,sans-serif;
+    overflow-y: scroll;
+    color: #4d4d4d;
+    background-color: #f9f9f9;
+}
+@font-face {
+    font-family: "SignPainter";
+    src: url("SignPainter.ttf") format("truetype");
+ } 
+h1 {
+    font-family: "SignPainter";
+    font-weight: 100;
+    font-size: 300%;
+    margin: 0 0;
+    padding: 0 0 0 0;
+}
+h4 {
+    margin: 0 0;
+    padding: 0 0;
+}
+#header {
+    position:fixed;
+    font-size: 85%;
+    width: 100%;
+    z-index: 1;
+}
+#header1, #header2 {
+ float: left;
+ background-color: RGBA(34,162,70,0.8);
+ width: 30%;
+ height: 50px;
+ margin: 0 0 20 0;
+}
+#header2 {
+    width: 70%;
+}
+#headerItem, #headerItemL {
+    float:right;
+    text-transform: capitalize;
+    color: white;
+    height: 100%;
+    line-height: 400%;
+    padding: 0 15 0 15;
+    transition: 0.3s all;
+    margin: 0;
+    cursor: pointer;
+}
+#headerItemL {
+    float: left;
+}
+#headerItem:hover {
+    background-color: RGB(27,158,66);
+}
+#headerNick {
+    float:left;
+}
+#headerAvatar {
+    float:left;
+    width: 40;
+    height: 40;
+    border-radius: 5px;
+    margin: 5 0 5 10;
+}
+#menu {
+    position: absolute;
+    top:0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 262;
+    background-image: url('../../images/cabin.png');
+    background-position-y: bottom;
+}
+#menuItem {
+    float:left;
+    cursor: pointer;
+    width: 10%;
+    height: 150px;
+    background-color: RGBA(239,239,239,0);
+}
+#menuTopChosen {
+    height: 115px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url('../../images/nav.png');
+    border-bottom: green;
+    border-width: 0 0 5 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+#menuTop {
+    height: 115px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    opacity: 0.8;
+    background-image: url('../../images/nav.png');
+    transition: linear 0.2s border;
+}
+#menuItem:hover > #menuTop{
+    opacity:1;
+    border-bottom: green;
+    border-width: 0 0 5 0;
+    border-style: solid;
+    box-sizing: border-box;
+}
+#menuDown {
+    background-color: RGB(239,239,239);
+    text-transform:uppercase;
+    font-size: small;
+    padding: 5 5;
+    color: black;
+    margin: 0 1;
+}
+#menuDown2 {
+    background-color: white;
+    text-transform:uppercase;
+    font-size: small;
+    padding: 5 5;
+    color: black;
+    margin: 0 1;
+}
+#main {
+    position:absolute;
+    top:300;
+    padding: 0 0 0 9;
+    margin: 5 0;
+    clear: both;
+}
+#mainLeft, #mainRight, #mainBottom {
+    float:left;
+border-style: solid;
+border-radius: 5px;
+padding: 15;
+margin: 0 0.6vw;
+width: 45vw;
+border-color: #ddd;
+border-width: 1px;
+background-color: white;
+}
+#UploadButton, #UploadButton2 { 
+    float: left;
+    width: 90;
+    margin: 0 10;
+    padding: 10 16;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 5px;
+    color:white;
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    background-color: RGB(32,186,78);
+}
+#UploadButton2 {
+    color: #4d4d4d;
+    background-color: white;
+}
+#UploadButton2:hover {
+    background-color: #e6e6e6;
+}
+#UploadButton:hover {
+    background-color: RGB(25,142,60);
+}
+#mainRight {
+    margin-bottom: 15px;
+}
+#mainLeft input, #mainLeft select {
+    margin: -10 0 5 0;
+    width: 45vw;
+    border-radius: 5px;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 120%;
+    font-size: 120%;
+    outline:none;
+}
+#mainLeft input:focus, #mainLeft select:focus {
+border-color: #20ba4e;
+}
+#mainLeft textarea {
+    margin: -10 0 5 0;
+    width: 45vw;
+    border-radius: 5px;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    outline:none;
+
+}
+#mainLeft textarea:focus {
+    border-color: #20ba4e;
+}
+#mainBottom {
+    clear:both;
+    width: 93.5vw;
+    margin: 10 0 30 0;
+    background-color: #f9f9f9;
+}
+#mainItem {
+    float:left;
+    margin: 0 10;
+}
+#mainPhoto {
+    position:relative;
+    width: 300;
+    height: 175;
+    transition: 0.3s all;
+}
+#mainPhoto:hover {
+    filter:brightness(0.8);
+}
+#mainInfo {
+    position:absolute;
+    bottom: 10;
+    font-size: small;
+    right: 5;
+    color:RGBA(255,255,255,255);
+    text-align: right;
+}
+#mainText {
+    margin: 8 0;
+    line-height: 25px;
+}
+#title {
+    font-weight:bold;
+}
+#autor {
+    font-size: 90%;
+}
+a:visited, a, a:link, a:hover {
+    text-decoration: none;
+    color: white;
+}
+#headerSearch {
+    position:fixed;
+    margin: -5 0 0 0;
+    right: 0px;
+    top: 55px;
+    color: #666;
+    box-shadow: 0 3px 10px rgba(0,0,0,.5);
+    background-color: #20ba4e;
+}
+#headerProfile {
+    position:fixed;
+    padding: 5 0;
+    margin: -5 0 0 0;
+    right: 45px;
+    top: 55px;
+    width: 150;
+    background-color: #fff;
+    color: #666;
+    box-shadow: 0 3px 10px rgba(0,0,0,.5);
+}
+#headerProfileButton {
+    color: #4d4d4d;
+width:140;
+padding: 5 0 5 10;
+cursor: pointer;
+}
+#headerProfileButton:hover {
+background-color: #f5f5f5;
+}
+#searchBar {
+    float: left;
+    background-color: #eee;
+    padding: 10;
+}
+hr {
+    color: #e5e5e5;
+}
+#searchButton {
+    float: left;
+    background-color: #20ba4e;
+    border-style: none;
+    padding: 11 5;
+    font-size: 100%;
+    color: white;
+    cursor: pointer;
+}
+#searchButton:hover {
+    background-color: RGB(27,158,66);
+}
+#searchInput {
+    border-style:none;
+    width: 200;
+    font-size: 100%;
+    background-color: #eee;
+    margin: 0;
+    height: 100%;
+    line-height: 100%;
+    outline: none;
+}
